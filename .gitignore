@@ -57,5 +57,4 @@ typings/
 # dotenv environment variables file
 .env
 
-claudia-js-getting-started/.idea
-claudia-js-api-gateway/.idea
+.idea

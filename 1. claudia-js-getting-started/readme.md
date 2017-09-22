@@ -1,4 +1,4 @@
-## Claudia JS getting started
+# Claudia JS getting started
 This sub-project is first trial of ClaudiaJS and I will describe here what was needed to make it work.
 Lambda responds to the empty event with "Hello world!" but when you provide a name in your event - i will use this name to greet you. Example event.json:
 ```
