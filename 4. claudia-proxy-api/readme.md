@@ -12,4 +12,4 @@ https://xyz.aws.com/my-app/endpoint1
 https://xyz.aws.com/my-app/endpoint2
 https://xyz.aws.com/my-app/endpoint3?my-param=my-value
 
-Deployment is very simple as always, just tun `claudia create --region us-west-2 --deploy-proxy-api --handler index.handler`
+To deploy just tun `claudia create --region us-west-2 --deploy-proxy-api --handler index.handler`

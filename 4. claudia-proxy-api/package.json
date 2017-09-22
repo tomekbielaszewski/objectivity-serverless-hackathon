@@ -4,8 +4,17 @@
   "description": "https://claudiajs.com/tutorials/deploying-proxy-api.html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy-new-lambda": "claudia create --version dev --region us-west-2 --deploy-proxy-api --handler index.handler",
+    "update-existing-lambda": "claudia update --version dev",
+    "release-to-production": "claudia set-version --version prod",
+    "start": "ntl",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "destroy-existing-lambda": "claudia destroy"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "claudia": "^2.14.2",
+    "ntl": "^1.2.0"
+  }
 }
