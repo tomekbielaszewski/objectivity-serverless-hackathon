@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "claudia-js-getting-started-executor",
+    "name": "claudia-js-getting-started",
+    "region": "us-west-2"
+  }
+}
