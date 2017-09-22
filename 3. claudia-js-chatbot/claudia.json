@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "claudia-js-chatbot-executor",
+    "name": "claudia-js-chatbot",
+    "region": "us-west-2"
+  },
+  "api": {
+    "id": "yoo1fq8k6k",
+    "module": "index"
+  }
+}
