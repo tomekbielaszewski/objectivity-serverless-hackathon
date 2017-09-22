@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "deploy-new-lambda": "claudia create --version dev --region us-west-2 --api-module index",
-    "update-existing-lambda": "claudia update",
-    "release-to-production": "claudia set-version --version production",
+    "update-existing-lambda": "claudia update --version dev",
+    "release-to-production": "claudia set-version --version prod",
     "start": "ntl",
     "test": "echo \"Error: no test specified\" && exit 1",
     "destroy-existing-lambda": "claudia destroy"

@@ -4,12 +4,24 @@
   "description": "https://claudiajs.com/tutorials/hello-world-chatbot.html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy-new-lambda": "claudia create --version dev --region us-west-2 --api-module index",
+    "update-existing-lambda": "claudia update --version dev",
+    "release-to-production": "claudia set-version --version prod",
+    "configure-facebook-messenger": "claudia update --configure-fb-bot",
+    "configure-slack-slash-command": "claudia update --configure-slack-slash-command",
+    "configure-slack-slash-app": "claudia update --configure-slack-slash-app",
+    "start": "ntl",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "destroy-existing-lambda": "claudia destroy"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "claudia-bot-builder": "^2.15.0",
     "huh": "^2.0.1"
+  },
+  "devDependencies": {
+    "claudia": "^2.14.2",
+    "ntl": "^1.2.0"
   }
 }

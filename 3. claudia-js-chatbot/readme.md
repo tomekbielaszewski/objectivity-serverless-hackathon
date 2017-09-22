@@ -2,7 +2,7 @@
 
 This project implements very simple chatbot which always responds with excuses.
 
-Deployment is made as always with simple command `claudia create --region us-west-2 --api-module index`
+Deployment is made as always with simple command `claudia create --region us-west-2 --api-module index` or just choose option from menu `npm start`
 
 But this needs additional configuration for successfull integration with one of supported chat services.
 I've chosen Slack but you can easly integrate this chatbot with any of following services: Facebook, Telegram, Skype, Twilio, Kik, GroupMe, Line, Viber, Alexa.
