@@ -4,12 +4,21 @@
   "description": "https://claudiajs.com/tutorials/hello-world-api-gateway.html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy-new-lambda": "claudia create --version dev --region us-west-2 --api-module index",
+    "update-existing-lambda": "claudia update",
+    "release-to-production": "claudia set-version --version production",
+    "start": "ntl",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "destroy-existing-lambda": "claudia destroy"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "claudia-api-builder": "^2.5.1",
     "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "claudia": "^2.14.2",
+    "ntl": "^1.2.0"
   }
 }
