@@ -8,3 +8,5 @@ After finished deployment claudia will print out API Gateway endpoint which you 
 Lambda exposes 2 endpoints:
 - `/hello` which responds with static text
 - `/greet?name=tomekbielaszewski` which responds with dynamic text based on given parameter 
+
+Based on: https://claudiajs.com/tutorials/hello-world-api-gateway.html

@@ -17,3 +17,5 @@ RequestURL: [slackSlashCommand from claudia update response]
 Short description: my test app
 
 click Save and your custom slack command is up and running!
+
+Based on: https://claudiajs.com/tutorials/hello-world-chatbot.html
