@@ -1,0 +1,24 @@
+{
+  "name": "claudia-js-express-app",
+  "version": "1.0.0",
+  "description": "https://claudiajs.com/tutorials/serverless-express.html",
+  "main": "lambda.js",
+  "scripts": {
+    "deploy-new-lambda": "claudia create --version dev --handler lambda.handler --deploy-proxy-api --region us-west-2",
+    "update-existing-lambda": "claudia update --version dev",
+    "release-to-production": "claudia set-version --version prod",
+    "start": "ntl",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "destroy-existing-lambda": "claudia destroy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-serverless-express": "^3.0.2",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "claudia": "^2.14.2",
+    "ntl": "^1.2.0"
+  }
+}
